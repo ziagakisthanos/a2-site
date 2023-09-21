@@ -21,7 +21,6 @@ body {
 }
 
 .header {
-  /* width: 1300px; */
   width: 100%;
   height: 96px;
   background-color: #1f2937;
@@ -52,7 +51,6 @@ ul li {
 }
 
 .hero-section {
-  /* width: 1300px; */
   background-color: #1f2937;
   display: flex;
   justify-content: center;
@@ -118,7 +116,6 @@ h1 {
 
 .about-span {
   display: inline-block;
-  /* line-height: 20; */
   text-decoration: underline;
 }
 .icon {
@@ -138,7 +135,6 @@ h1 {
   font-size: 32px;
   text-align: justify;
   font-weight: lighter;
-  /* position: relative; */
 }
 
 .insp-div {
@@ -165,17 +161,12 @@ h1 {
   border-radius: 10px;
 }
 
-/* .call-action {
-  flex: 1;
-} */
-
 .action-btn {
   border: 2px solid #e5e7eb;
 }
 
 footer {
   color: #e5e7eb;
-  /* text-align: center; */
   position: static;
   height: 5vh;
   background-color: #1f2937;
