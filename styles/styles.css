@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -30,6 +30,7 @@ header {
   align-items: center;
   padding: 0 48px;
   position: fixed;
+
 }
 
 header h3 {
@@ -59,7 +60,9 @@ ul li {
   gap: 96px;
   color: #fff;
   height: 80vh;
+  z-index: -1000;
 }
+
 h1 {
   font-size: 48px;
   font-family: "Roboto";
@@ -69,7 +72,9 @@ h1 {
 }
 
 .hero {
+
   width: 500px;
+  min-width: 100px;
 }
 
 .hero-image {
@@ -93,6 +98,12 @@ h1 {
   font-size: 18px;
   font-weight: bold;
   min-width: 130px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
 
 .about {
@@ -104,6 +115,7 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
 .about p {
   text-align: center;
   color: #868e96;
@@ -119,35 +131,43 @@ h1 {
   display: inline-block;
   text-decoration: underline;
 }
+
 .icon {
   stroke: #3882f6;
   height: 48px;
   margin: auto 40%;
   margin-bottom: 12px;
 }
+
 .inspiration-section {
   background-color: #e9ecef;
   margin: 0 10%;
 }
 
 .inspiration {
+  display: flex;
+  flex-direction: column;
   color: #adb5bd;
-  padding: 64px 30%;
+  padding: 34px 30%;
   font-size: 32px;
   text-align: justify;
   font-weight: lighter;
+
+
 }
 
-.insp-div {
+/* .insp-div {
   position: relative;
-}
+} */
+
 .author {
-  position: absolute;
+  /* position: absolute; */
   font-size: 24px;
   font-weight: bold;
   bottom: 30px;
   right: 500px;
-  z-index: 900;
+  margin-left: 65%;
+  /* z-index: 900; */
 }
 
 .call-section {
@@ -170,4 +190,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 900px) {
+  .hero-section {
+    padding-top: 200px;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .hero-image{
+    width: 600px;
+  }
 }
