@@ -7,7 +7,7 @@
 @font-face {
   font-family: "Roboto";
   src: url(../fonts/Roboto-Bold.tff) format("truetype");
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 * {
@@ -30,7 +30,6 @@ header {
   align-items: center;
   padding: 0 48px;
   position: fixed;
-
 }
 
 header h3 {
@@ -72,7 +71,6 @@ h1 {
 }
 
 .hero {
-
   width: 500px;
   min-width: 100px;
 }
@@ -103,7 +101,7 @@ h1 {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 .about {
@@ -152,8 +150,6 @@ h1 {
   font-size: 32px;
   text-align: justify;
   font-weight: lighter;
-
-
 }
 
 /* .insp-div {
@@ -194,12 +190,28 @@ footer {
 
 /* Media query for screens smaller than 600px */
 @media (max-width: 900px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    /* column-gap: 32px; */
+    margin-bottom: 32px;
+  }
+  ul {
+    display: flex;
+    margin-top: 32px;
+    flex-direction: column;
+  }
+
+  li {
+    flex: 1;
+  }
   .hero-section {
     padding-top: 200px;
     flex-direction: column;
+    column-gap: 32px;
     height: 100vh;
   }
-  .hero-image{
-    width: 600px;
+  .hero-image {
+    width: 100%;
   }
 }
